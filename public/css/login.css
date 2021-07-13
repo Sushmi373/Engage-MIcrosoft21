@@ -1,0 +1,111 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fbackgroundcheckall.com%2Fwp-content%2Fuploads%2F2017%2F12%2Fbackground-images-for-login-form-8.jpg&f=1&nofb=1);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    color:#fff;
+}
+h3{
+    color:#fff;
+}
+
+input{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+
+}
+
+button{
+    font-family: 'Nunito' , sans-serif;
+    font-weight: 700;
+    background: #5d8ffc;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display:block;
+    width: 100%;
+    transition: 0.3s ;
+    -webkit-transition:0.3s;
+    -moz-transition: 0.3s;
+}
+
+button:hover{
+    background: #fff;
+    color: #FF5800;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+}
+
+.main-div , .loggedin-div{
+    font-family: 'Nunito' , sans-serif;
+    width: 30%;
+    margin-top: 150px;
+    margin: 0px auto;
+    padding: 20px;
+    padding-top: 150px;
+    margin-left: 100px;
+}
+.signup-main-div{
+    font-family: 'Nunito' , sans-serif;
+    width: 30%;
+    margin-top: 100px;
+    margin: 0px auto;
+    padding: 20px;
+    padding-top: 100px;
+    margin-left:100px;
+}
+a{
+    font-family: 'Nunito' , sans-serif;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size:20px;
+    color:#fff;
+    float: left;
+    text-decoration: none;
+}
+.main-div a:hover{
+    color: #5d8ffc;
+}
+.main-div input , .signup-main-div input{
+    display: block;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    outline: none;
+    width: 88%;
+    margin-bottom: 20px;
+}
+.main-div input:focus , .signup-main-div input:focus{
+    border : 1px solid rgb(78, 77, 77);
+
+}
+.main-div button , .loggedin-div button , .signup-main-div button{
+    background: #5d8ffc;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 5px;
+    padding: 15px;
+    display:block;
+    width: 100%;
+    transition: 0.3s ;
+    -webkit-transition:0.3s;
+    -moz-transition: 0.3s;
+}
+.main-div button:hover,.loggedin-div button:hover , .signup-main-div button:hover{
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+}
+#user_para{
+    color: #fff;
+}

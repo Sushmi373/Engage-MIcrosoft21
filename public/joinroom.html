@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Title and web application icon -->
+     <title>TeamUp-joinroom</title>
+     <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fdisp%2F30fe9b7917223.560be8f580f20.png&f=1&nofb=1"type="image/x-icon">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/index.css">
+     <!-- firebase-script -->
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+     <!--login-script-->
+     <script src="js/login.js"></script>
+     <!-- JOIN SCRIPT -->
+     <script>
+          function join(){
+              var joinroom = document.getElementById("link").value;
+              window.open(joinroom);
+          }
+          function newmeet(){
+               window.location.href="https://engageteamup.herokuapp.com/newmeet"
+          }
+      </script>
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="joinroom.html">
+              <i class="fa fa-line-chart"></i>
+              Team Up
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll">Agile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                         <a onclick="logout()" style="cursor: pointer;"class="nav-link logout">Logout</a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- MAIN -->
+     <section class="hero hero-bg d-flex justify-content-center align-items-center">
+               <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                              <div class="hero-text">
+
+                                   <h1 class="text-white" data-aos="fade-up">Welcome to Team Up!</h1>
+                                   <h3 class="text-white" data-aos="fade-up">Start your next meeting with a single click.</h3>
+                                   <!-- to create new meeting room -->
+                                   <a  onclick='newmeet()'class="custom-btn btn-bg btn mt-3 " data-aos="fade-up" data-aos-delay="100">New Meeting</a><br>
+                                   <!-- to join existing meeting -->
+                                   <div>
+                                        <input  style="width:50%;border-radius: 4px;"type="text" id="link" placeholder="Enter the link"/>
+                                        <span class="join" id="join" onclick="join()" style="font-size:1.6vw;font-weight: 100px;;color:#1663be;background-color:#FFFFFF;font-weight:40;
+                                        padding: 10px 24px 12px 24px;cursor:pointer;border-radius: 35px" >join Meeting</a>
+                                   </div>
+                              </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                          <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+
+                            <img src="images/working-girl.png" class="img-fluid" alt="working girl">
+                          </div>
+                        </div>
+
+                    </div>
+               </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section class="about section-padding pb-0" id="about">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                         <div class="about-info">
+
+                              <h2 class="mb-4" data-aos="fade-up">About <strong>Team Up</strong></h2>
+
+                              <p class="mb-0" data-aos="fade-up">This is a simple and responsive Web Application using WebRTC,Socket.io,node.js and so many different technologies which offer you to create a video conference room that lets you stay in touch with all your friends.</a><br><br>
+                                   Using this website you can create a room and share the room link with your friends and get connected, you can toggle your video and audio,you can chat with your friends through chat box, you also have a raise hand facility and at the end of the meeting you can press the leave button and end your conversation happily.
+                              </p>
+                         </div>
+
+                         <div class="about-image" data-aos="fade-up" data-aos-delay="200">
+
+                          <img src="images/office.png" class="img-fluid" alt="office">
+                        </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- Agile Methodology -->
+     <section class="project section-padding" id="project">
+          <div class="container-fluid">
+               <div class="row">
+                    <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <div class="about-info">
+
+                         <h3 class="mb-4" data-aos="fade-up" ><br><br><strong>Agile Methodology</strong></h3>
+
+                         <p class="mb-0" data-aos="fade-up"></a>Agile methodologies are approaches to product development that are aligned with the values ​​and principles described in the Agile Manifesto for software development. Agile methodologies aim to deliver the right product, with incremental and frequent delivery of small chunks of functionality, through small cross-functional self-organizing teams, enabling frequent customer feedback and course correction as needed.
+                              <br><br>Some of the primary Agile methodologies are scrum,
+                              Kanban Software Development,
+                              Extreme Programming (XP),
+                              Dynamic Systems Development Method (DSDM),
+                              Feature Driven Development (FDD),
+                              Crystal.</a><br><br>
+                         </p>
+                    </div>
+                    </div>
+                         
+                    </div>
+
+               </div>
+     </section>
+
+
+     <!-- Quote section-->
+     <section class="testimonial section-padding">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-lg-6 col-md-5 col-12">
+                        <div class="contact-image" data-aos="fade-up">
+
+                          <img src="images/female-avatar.png" class="img-fluid" alt="website">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-7 col-12">
+
+                      <div class="quote" data-aos="fade-up" data-aos-delay="200"></div>
+
+                      <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300"><br></br>Coming together is a begining,</br>staying together is progress,</br>and working together is success.</h2>
+                      <p data-aos="fade-up" data-aos-delay="400">
+                        <strong>-Henry Ford</strong>
+
+                        <span class="mx-1">/</span>
+                      </p>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">Let's <strong> Team Up</strong>!</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="200">
+            <h4 class="my-4">Contact Info</h4>
+
+            <p>
+              <a href="#">
+                <i class="fa fa-envelope mr-2 footer-icon"></i>
+                gatla.sushmitha.mat19@itbhu.ac.in
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 mx-lg-auto col-md-6 col-12" data-aos="fade-up" data-aos-delay="600">
+            <ul class="social-icon">
+               <li><a href="https://www.linkedin.com/in/sushmitha373" class="fa fa-linkedin"></a></li>
+              <li><a href="https://www.instagram.com/sushmireddy_21/" class="fa fa-instagram"></a></li>
+              
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+
+</body>
+</html>

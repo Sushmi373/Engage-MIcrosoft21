@@ -1,0 +1,718 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+}
+#video-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  video {
+    display: block;
+    flex: 1;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 5px solid #1F1F1F;
+    max-width: 600px;
+max-height: 600px;}
+
+.main{
+    height: 100%;
+    background-color: #000;
+}
+.main1{
+    height: 88vh;
+    display: flex;
+    flex-direction: row;
+    flex:0.8;
+    background-color: #1F1F1F;
+}
+.main2{
+    height: 12vh;
+    display: flex;
+    flex-direction: row;
+    flex:0.2;
+    background-color:#000; 
+}
+
+.bodyLeft{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyRight{
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    background-color: #D2D2D2;
+    border-left: 1px solid #3D3D42;
+}
+
+.mainVideos{
+    flex-grow: 1;
+    background-color: #1F1F1F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.mainControlsBlock{
+    display: flex;
+    padding: 5px;
+}
+
+.mainControlsButton{
+    display: flex;
+    color: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    left: 250px;
+    opacity: 0.7    ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    min-width: 100px;
+    cursor: pointer;
+}
+.leaveBtn{
+    display: flex;
+    color:#FFFFFF;
+    border-radius: 70px;
+    position: relative;
+    left: 500px;
+    background-color: #FF0000;
+    opacity: 0.7;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    min-width: 90px;
+    border:1px solid black ;
+    cursor: pointer;
+}
+.Currenttime{
+    display: flex;
+    color:#FFFFFF;
+    position: relative;
+    left: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    min-width: 90px;
+    cursor: pointer;
+}
+.leaveBtn:hover{
+    background-color:#DF2800;
+}
+
+.mainControlsButton i {
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.mainControlsButton:hover{
+    background-color: #343433;
+    color:white;
+    border-radius: 10px;
+}
+
+.leaveMeeting{
+    color: red;
+}
+
+.chat-header{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.chat-Window{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.chat-Container{
+    display: flex;
+    padding: 0%;
+    
+}
+.chat-Container input{
+    padding: 10px;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.messages{
+    color: #1F1F1F;
+    list-style-type: square;
+}
+
+.unmute{
+    color: red;
+}
+.bodyRight{
+    padding: 15px;
+}
+
+.raiseHand{
+    color:white;
+}
+@media only screen and (min-width: 1000px) and (max-width: 1195px) {
+    #video-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+      }
+      video {
+        display: block;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 5px solid #1F1F1F;
+        max-width: 600px;
+        max-height: 600px;
+      }
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    .main1{
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #1F1F1F;
+    }
+    .main2{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+    }
+    .bodyLeft{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyRight{
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        background-color: #D2D2D2;
+        border-left: 1px solid #3D3D42;
+    }
+    .mainVideos{
+        flex-grow: 1;
+        background-color: #1F1F1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .mainControlsBlock{
+        display: flex;
+    }
+    .mainControlsButton{
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        left: 230px;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        cursor: pointer;
+    }
+    .mainControlsButton i {
+        font-size: 18px;
+
+    }
+    .leaveBtn{
+        display: flex;
+        border-radius: 70px;
+        position: relative;
+        left: 400px;
+        opacity: 0.8;
+    }
+
+}
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    #video-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+      }
+      video {
+        display: block;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 5px solid #1F1F1F;
+        max-width: 600px;
+        max-height: 600px;
+      }
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    .main1{
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #1F1F1F;
+    }
+    .main2{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+    }
+    .bodyLeft{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyRight{
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        background-color: #D2D2D2;
+        border-left: 1px solid #3D3D42;
+    }
+    .mainVideos{
+        flex-grow: 1;
+        background-color: #1F1F1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .mainControlsBlock{
+        display: flex;
+    }
+    .mainControlsButton{
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        left: 130px;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        cursor: pointer;
+    }
+    .mainControlsButton i {
+        font-size: 18px;
+
+    }
+    .leaveBtn{
+        display: flex;
+        border-radius: 70px;
+        position: relative;
+        left: 200px;
+        opacity: 0.8;
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+    #video-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+      }
+      video {
+        display: block;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 5px solid #1F1F1F;
+        max-width: 600px;
+        max-height: 600px;
+      }
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    .main1{
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #1F1F1F;
+    }
+    .main2{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+    }
+    .bodyLeft{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyRight{
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        background-color: #D2D2D2;
+        border-left: 1px solid #3D3D42;
+    }
+    .mainVideos{
+        flex-grow: 1;
+        background-color: #1F1F1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .mainControlsBlock{
+        display: flex;
+    }
+    .mainControlsButton{
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        left: 110px;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        cursor: pointer;
+    }
+    .mainControlsButton i {
+        font-size: 18px;
+
+    }
+    .leaveBtn{
+        display: flex;
+        border-radius: 70px;
+        position: relative;
+        left: 170px;
+        opacity: 0.8;
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+      #video-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+      }
+      video {
+        display: block;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 5px solid #1F1F1F;
+        max-width: 600px;
+        max-height: 600px;
+      }
+
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    .main1{
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #1F1F1F;
+    }
+    .main2{
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+    }
+    .bodyLeft{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyRight{
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        background-color: #D2D2D2;
+        border-left: 1px solid #3D3D42;
+    }
+    .mainVideos{
+        flex-grow: 1;
+        background-color: #1F1F1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainControlsBlock{
+        display: flex;
+    }
+    .mainControlsButton{
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        left: 0px;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        cursor: pointer;
+    }
+    .mainControlsButton i {
+        font-size: 18px;
+
+    }
+    .leaveBtn{
+        display: flex;
+        border-radius: 70px;
+        position: relative;
+        left: 20px;
+        background-color: #FF0000;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        border:1px solid black ;
+        cursor: pointer;
+    }
+    .leaveBtn:hover{
+        background-color:#DF2800;
+    }
+
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    #video-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+      }
+      video {
+        display: block;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 5px solid #1F1F1F;
+        max-width: 600px;
+        max-height: 400px;
+      }
+
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    .main1{
+        height: 165vh;
+        width:130vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #1F1F1F;
+    }
+    .main2{
+        height: 16vh;
+        width:130vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+    }
+    .bodyLeft{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyRight{
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        background-color: #D2D2D2;
+        border-left: 1px solid #3D3D42;
+    }
+    .mainVideos{
+        flex-grow: 1;
+        background-color: #1F1F1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainControlsBlock{
+        display: flex;
+        background-color: #000;
+    }
+    .mainControlsButton{
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        left: 180px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        cursor: pointer;
+        font-size: 18px;
+        
+    }
+    .mainControlsButton i {
+        font-size: 30px;
+
+    }
+    .leaveBtn{
+        padding: 2px 2px;
+        min-width: 180px;
+        display: flex;
+        border-radius: 70px;
+        position: relative;
+        left: 300px;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .leaveBtn:hover{
+        background-color:#DF2800;
+    }
+
+}
+@media only screen and (min-width: 350px) and (max-width: 400px) {
+    #video-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: auto;
+      }
+      video {
+        display: block;
+        flex: 1;
+        object-fit: cover;
+        border-radius: 5px;
+        border: 5px solid #1F1F1F;
+        max-width: 600px;
+        max-height: 400px;
+      }
+
+    .main{
+        height: 100%;
+        width: 100%;
+    }
+    .main1{
+        height: 235vh;
+        width:120vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #1F1F1F;
+    }
+    .main2{
+        height: 18vh;
+        width:120vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #000;
+    }
+    .bodyLeft{
+        flex: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyRight{
+        flex: 0.2;
+        display: flex;
+        flex-direction: column;
+        background-color: #D2D2D2;
+        border-left: 1px solid #3D3D42;
+    }
+    .mainVideos{
+        flex-grow: 1;
+        background-color: #1F1F1F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .mainControlsBlock{
+        display: flex;
+        background-color: #000;
+    }
+    .mainControlsButton{
+        display: flex;
+        border-radius: 10px;
+        position: relative;
+        left: 160px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 5px;
+        min-width: 70px;
+        cursor: pointer;
+        font-size: 18px;
+        
+    }
+    .mainControlsButton i {
+        font-size: 30px;
+
+    }
+    .leaveBtn{
+        padding: 2px 2px;
+        min-width: 180px;
+        display: flex;
+        border-radius: 70px;
+        position: relative;
+        left: 250px;
+        opacity: 0.8;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .leaveBtn:hover{
+        background-color:#DF2800;
+    }
+
+}

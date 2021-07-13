@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamUp-signup</title>
+        <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fdisp%2F30fe9b7917223.560be8f580f20.png&f=1&nofb=1"type="image/x-icon">
+</head>
+<body>
+    <div id="signup-div" class="signup-main-div">
+        <h3>SignUP Page</h3>
+        
+        <input type="text" placeholder="User Name..." id="uname" required/>
+        <input type="email" placeholder="email..." id="user_email" required/>
+        <input type="password" placeholder="password..." id="user_password" required/>
+        <!-- <label>confirm password: -->
+        <!-- <input type="password" name="confirm_password" id="confirm_password" onchange="check()"/>  -->
+        <button onclick="signUp()">Sign Up</button>
+        <h5>Already have an account?<a href="login.html">LogIn</a></h5>
+        
+    </div>
+    
+    <!-- firebase-script -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
