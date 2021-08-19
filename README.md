@@ -53,10 +53,6 @@ or
 node server.ja
 ```
 
-### About the Website
-
-
-
 ### Live Demo
 For deploy the project I use heroku
 
@@ -64,10 +60,12 @@ link:https://engageteamup.herokuapp.com/
 
 ### Agile Methodology
 
+link:https://docs.google.com/presentation/d/1bmvcs0rVSt6HCECOFxkEI6HAoXLtjlIP/edit?usp=drivesdk&ouid=116738520215379039061&rtpof=true&sd=true
+
 * Sprint 1:Planned and designed the Overview of the project and explored Technologies and started building the web site.
 * Sprint 2:Worked on minimum feature,worked on the other features and started working on login page.
 * Sprint 3:Added some more features,completed the login page and got feedback from my Mentors ,seniors and friends.
-* Sprint 4:Cleard the bugs,worked a little more on the frontend part,again got the feedback.
+* Sprint 4:Cleared the bugs,worked a little more on the frontend part and again got the feedback.
 
 
 
