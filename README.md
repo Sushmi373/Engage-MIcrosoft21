@@ -29,7 +29,7 @@ This is a simple and responsive Web Application which offer you to create a vide
 ### Installing
 After installing node clone the repo by using git
 ```
-$ git clone https://github.com/Sushmi373/Engage-Microsoft.git
+$ git clone https://github.com/Sushmi373/Engage-Microsoft21.git
 ```
 Or you can download the zip file.
 
