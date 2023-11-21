@@ -55,8 +55,7 @@ node server.ja
 
 ### Live Demo
 For deploy the project I use heroku
-
-link:https://engageteamup.herokuapp.com/
+Video demo:https://youtu.be/g8MioM7yVJU
 
 ### Agile Methodology
 
